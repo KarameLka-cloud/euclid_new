@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 75px;
+
+  // outline: 1px solid green;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+}
+
+// Header
+
+.header {
+  &__block {
+    height: 100px;
+    align-items: center;
+    padding: 14px 0;
+    box-shadow: 0 5px 40px #00000040;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  // &__burger {
+  // }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__img {
+    height: 72px;
+  }
+
+  &__nav {
+    margin-right: 85px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 85px;
+  }
+
+  &__search {
+    height: 24px;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  &__list {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__link {
+    color: #333;
+    // &:hover {
+    // }
+  }
+}
+
+// Hero
+
+.hero {
+  &__container {
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    background-image: url(/img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg);
+  }
+
+  &__title {
+    max-width: 837px;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    max-width: 790px;
+    margin-bottom: 90px;
+  }
+
+  &__button {
+    padding: 24.83px 36.88px;
+    margin-bottom: 55px;
+  }
+
+  &__bullits {
+    display: flex;
+    justify-content: center;
+    :not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.hero-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 85.33px;
+    color: #fff;
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    color: #fff;
+  }
+
+  &__button {
+    display: block;
+    width: fit-content;
+    font-size: 23.46px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background-color: #ff9900;
+  }
+}
+
+// About Us
+
+.about-us {
+  &__container {
+    margin-bottom: 150px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 1235px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__block-left {
+    margin-right: 30px;
+  }
+
+  &__block-left,
+  &__block-right {
+    flex: 0 1 870px / 1770px * 100%;
+  }
+
+  &__block-left {
+    position: relative;
+    border: 1px solid #cacaca;
+    background-image: url(/img/about-us/background-left-block.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__block-left-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #00000080;
+  }
+
+  &__block-left-description {
+    max-width: 454px;
+  }
+
+  &__block-left-button {
+    padding: 20px 38px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    padding: 65px 0 65px 60px;
+    border: 1px solid #cacaca;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__right-img {
+    height: 165px;
+    margin-right: 50px;
+  }
+
+  &__right-title {
+    margin-bottom: 8px;
+  }
+
+  &__right-description {
+    max-width: 450px;
+  }
+}
+
+.block-about {
+  &__left-description {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  &__right-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__right-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__left-button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid #ff9900;
+  }
+}
+
+// How we are working
+
+.how-working {
+  &__container {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 85px;
+    }
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__block-content {
+    flex: 0 1 758px / 1770px * 100%;
+    margin-right: 142px;
+  }
+
+  &__block-img {
+    flex: 0 1 870px / 1770px * 100%;
+  }
+
+  &__block-title {
+    margin-bottom: 8px;
+  }
+
+  &__block-description {
+    margin-bottom: 50px;
+  }
+
+  &__button-more {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 38px;
+    color: #fff;
+    background-color: #ff9900;
+  }
+
+  &__button-agreement {
+    display: inline-block;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 38px;
+    color: #333;
+    border: 1px solid #333;
+  }
+
+  &__block-img {
+    background-image: url(/img/work/Rectangle\ 18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.steps {
+  &__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &__block-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__block-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__block-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// FAQ
+
+.faq {
+  &__container {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    padding: 40px 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__description {
+    max-width: 1003px;
+    margin-top: 30px;
+  }
+}
+
+.list-info {
+  &__item {
+    border-top: 1px solid #cacaca;
+    &:last-child {
+      border-bottom: 1px solid #cacaca;
+    }
+  }
+
+  &__heading {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #333;
+  }
+
+  &__icon-more {
+    cursor: pointer;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333;
+  }
+}
+
+// Footer
+
+.section-title_color {
+  color: #cacaca;
+}
+
+.footer {
+  background-color: #222;
+  &__container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 252px;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    margin-bottom: 90px;
+  }
+
+  &__link {
+    line-height: 36px;
+    color: #cacaca;
+  }
+
+  &__social-link {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__icon {
+    height: 60px;
+  }
+
+  &__center {
+    width: 570px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 24px;
+    resize: none;
+    color: #cacaca;
+    background-color: #414141;
+    border: none;
+    margin-bottom: 25px;
+  }
+
+  &__message {
+    margin-bottom: 32px;
+  }
+
+  &__send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 19px 52px;
+  }
+
+  &__right {
+    max-width: 363px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #cacaca;
+  }
+}
+
+.form-block {
+  &__input {
+    display: block;
+  }
+
+  &__button {
+    color: #fff;
+    background-color: #ff9900;
+  }
+
+  &__agreement {
+    color: #cacaca;
+  }
+}
+
+.section-title_margin {
+  margin-bottom: 25px;
+}
